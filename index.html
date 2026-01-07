@@ -1,87 +1,221 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portfólio</title>
+
+    <!-- GOOGLE Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS próprio -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Lucas Ruan de Oliveira Silva</h1>
-            <nav>
+    <header> 
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="imagens/LOGOTIPOWHITE.png" alt="Logo Lucas Ruan">
+                </a>
+            </div><!--Logo-->
+            
+            <nav class="Menu-pc">
                 <ul>
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#ferramentas">Ferramentas</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li class="btn-contato">
+                        <a href="#contato">
+                            <button>Contato</button>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+            </nav><!--Menu PC-->
+        </div><!--interface-->
     </header>
 
-    <!-- Seção Herói -->
-    <section id="hero">
-        <div class="container">
-            <h2>Bem-vindo ao meu portfólio</h2>
-            <p>Explorando o mundo da Ciência da Computação e Desenvolvimento de Sistemas</p>
-            <a href="#projects" class="btn">Veja meus Projetos</a>
-        </div>
-    </section>
+    <main>
+        <section id="inicio" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-texto-topo">
+                        <h1>CADA LINHA DE CÓDIGO,<br> <span>UMA SOLUÇÃO.</span></h1>
+                        <p>
+                            Cada linha de código é uma solução. Aqui transformo desafios em soluções digitais, 
+                            criando experiências eficientes, inovadoras e funcionais. Meu trabalho é conectar 
+                            tecnologia e criatividade para transformar ideias em resultados reais.
+                        </p>
+                        <div class="btn-contato">
+                            <a href="#contato">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!-- txt-texto-topo -->
 
-    <!-- Sobre Mim -->
-    <section id="about" class="container">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Sou Lucas Ruan, um entusiasta da Ciência da Computação e Desenvolvimento de Sistemas. Minha paixão por tecnologia começou quando eu era jovem, e desde então, tenho me dedicado a aprimorar minhas habilidades e aprender sobre as últimas tendências do setor.</p>
+                    <div class="img-topo-site">
+                        <img src="imagens/LucasAvatar.png" alt="Foto Lucas">
+                    </div> <!--Img topo site-->
+                </div> <!--Flex-->
+            </div> <!--Interface-->
+        </section> <!--Topo-do-Site-->
 
-        <h3>Minha Jornada</h3>
-        <p>Estou me formando em Ciência da Computação pela Unifbv Wyden e, desde então, tenho trabalhado em diversos projetos, desde desenvolvimento web a criação de softwares. Minha experiência inclui estudar e utilizar HTML, CSS, JavaScript e Python, o que me permitiu construir soluções criativas e eficientes.</p>
+        <section id="especialidades" class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Website</h3>
+                        <p>Criação de sites modernos e responsivos, desenvolvidos para oferecer a melhor experiência ao usuário e destacar a sua marca no ambiente digital.</p>
+                    </div> <!--Especialidades-box-->
 
-        <h3>O que eu faço</h3>
-        <p>Atualmente, estou focado em desenvolvimento front-end e design, mas sou mais apegado ao back-end.</p>
+                    <div class="especialidades-box">
+                        <i class="bi bi-cart"></i>
+                        <h3>Lojas Online</h3>
+                        <p>Desenvolvimento de e-commerces completos, com design atrativo e funcionalidades que facilitam a compra e aumentam as vendas.</p>
+                    </div> <!--Especialidades-box-->
 
-        <h3>Meu objetivo</h3>
-        <p>Meu objetivo é continuar a expandir meus conhecimentos e aplicar minhas habilidades em projetos desafiadores. Estou sempre aberto a colaborar e aprender com outros profissionais da área. Além disso, adoro resolver problemas usando a programação, que me ajuda a me manter equilibrado e inspirado.</p>
+                    <div class="especialidades-box">
+                        <i class="bi bi-google-play"></i>
+                        <h3>Criação de Apps</h3>
+                        <p>Desenvolvimento de apps modernos e intuitivos, projetados para proporcionar a melhor experiência ao usuário e ampliar a presença da sua marca no ambiente digital.</p>
+                    </div> <!--Especialidades-box-->
+                </div> <!--Flex-->
+            </div> <!--Interface-->
+        </section> <!--Especialidades-->
 
-        <h3>Vamos nos conectar!</h3>
-        <p>Se você estiver interessado em discutir colaborações, projetos ou apenas quiser conversar sobre tecnologia, não hesite em entrar em contato. Estou ansioso para conectar-me com outros apaixonados por tecnologia!</p>
-    </section>
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/sobreLucas.jpeg" alt="Sobre Lucas">
+                    </div> <!--Img Sobre-->
+                    <div class="txt-sobre">
+                            <h2>MUITO PRAZER, <BR><span>SOU LUCAS RUAN.</span></h2>
+                            <p>Sou desenvolvedor apaixonado por tecnologia e criatividade, sempre em busca de transformar ideias em soluções digitais. Tenho experiência na criação de sites modernos, responsivos e funcionais, que entregam não apenas design atrativo, mas também a melhor experiência para o usuário. Meu objetivo é unir estética e performance para construir projetos que realmente façam a diferença.</p>
+                            <p>Além do desenvolvimento web, também me dedico à criação de aplicativos e plataformas personalizadas, focando em usabilidade e inovação. Cada projeto é uma oportunidade de aprendizado e evolução, e acredito que a tecnologia deve ser usada como ponte para aproximar pessoas, marcas e negócios, gerando resultados reais e duradouros.</p>
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/lusca.r_/"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.linkedin.com/in/lucas-ruan-lr/"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://github.com/LucasRuanDev"><button><i class="bi bi-github"></i></button></a>
+                            </div> <!--Btn-social-->
+                    </div> <!--Txt Sobre-->
+                </div> <!--Flex-->
+            </div> <!--Interface-->
+        </section> <!--Sobre-->
 
-    <!-- Projetos -->
-    <section id="projects" class="container">
-        <h2>Projetos</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Portfólio</h3>
-                <p>Criação deste site para fazer um portfólio online, usando HTML, CSS e JS.</p>
+        <section id="ferramentas" class="ferramentas">
+            <div class="interface">
+                <h2 class="titulo">SKILLS & <span>TECNOLOGIAS</span></h2>
+                <p class="txt-skills">Essas são as ferramentas e tecnologias que fazem parte do meu dia a dia como desenvolvedor.
+Com elas consigo criar soluções digitais completas — desde a estrutura até o design e a funcionalidade — sempre buscando unir praticidade, inovação e a melhor experiência para o usuário.</p>
+                <div class="flex">
+
+                     <div class="keys-container">
+                        <div class="key" data-info="Python: linguagem versátil para web, dados e automação.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="key" data-info="HTML5: linguagem de marcação para estruturar páginas.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        </div>
+                        <div class="key" data-info="CSS3: estilização e design para páginas web.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        </div>
+                        <div class="key" data-info="JavaScript: adiciona interatividade nas páginas.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="key" data-info="C: linguagem clássica de alto desempenho.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                        </div>
+                        <div class="key" data-info="GitHub: hospedagem de código e colaboração.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                        </div>
+                        <div class="key" data-info="PHP: linguagem para desenvolvimento web dinâmico.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        </div>
+                        <div class="key" data-info="MySQL: sistema de gerenciamento de banco de dados.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </div>
+
+                    <!-- Tooltip -->
+                    <div id="tooltip"></div>
+                </div>
             </div>
-            <div class="project">
-                <h3>CRUD</h3>
-                <p>Criação de um CRUD como projeto da faculdade.</p>
-            </div>
-            <div class="project">
-                <h3>Bot Discord</h3>
-                <p>Criação de um bot no Discord usando Python.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contato -->
-    <section id="contact" class="container">
-        <h2>Contato</h2>
-        <p>Estou disponível para novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato comigo!</p>
-        <p>Email: <a href="mailto:lruan1704@gmail.com">Enviar E-mail</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-ruan-021b2a2aa" target="_blank">Meu Perfil</a></p>
-        <p>GitHub: <a href="https://github.com/LucasRuanDev" target="_blank">Meu Perfil</a></p>
-    </section>
+        <section id="projetos" class="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">Em Breve</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">Em Breve</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">Em Breve</div>
+                    </div>
+                </div><!--Flex-->
+            </div> <!--Interface-->
+        </section> <!--Projetos-->
+
+        <section id="contato" class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+            <form id="meuForm" action="https://formspree.io/f/myzdbrle" method="POST">
+                <input type="text" name="nome" placeholder="*Seu nome:" required>
+                <input type="email" name="email" placeholder="*Seu e-mail:" required>
+                <input type="text" id="telefone" maxlength="15" placeholder="Seu número">
+                <textarea name="mensagem" placeholder="*Sua mensagem:" required></textarea>
+
+                <div class="btn-enviar">
+                    <input type="submit" value="ENVIAR">
+                </div>
+
+                <p id="mensagem-status" style="margin-top: 15px; font-weight:bold;"></p> <!--Mensagem de acerto ou erro-->
+            </form>
+            </div><!--interface-->
+        </section><!--Contato-->
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Lucas Ruan. Todos os direitos reservados.</p>
-        </div>
+        <div class="interface">     
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagens/LOGOTIPOWHITE.png" alt="">
+                    </div><!--Logo footer-->
+
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/lusca.r_/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/lucas-ruan-lr/"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/LucasRuanDev"><button><i class="bi bi-github"></i></button></a>
+                    </div> <!--Btn-social-->
+                </div><!--Flex-->
+            </div><!--Line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:lucasruandeosilva@gmail.com">lucasruandeosilva@gmail.com</a></p>
+            </div><!--Line-footer-->
+        </div><!--Interface-->
     </footer>
 
-    <script src="script.js"></script> <!-- Referência ao arquivo JS -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--Js-->
+    <script src="form.js"></script>
 </body>
 </html>
